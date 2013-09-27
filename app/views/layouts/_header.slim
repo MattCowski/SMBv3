@@ -1,4 +1,5 @@
-header.navbar.navbar-fixed-top.navbar-inverse
+/ FIXME add images
+/ FIXME header.navbar.navbar-fixed-top.navbar-inverse
   .navbar-inner
     .container
       = link_to "App", root_path, id: "logo"
@@ -22,3 +23,12 @@ header.navbar.navbar-fixed-top.navbar-inverse
 
 
 
+header.text-center
+  .row-fluid
+    .span3
+    .span6
+      == link_to image_tag("KT.LOGO.white.small.png", alt: "logo"), '#'
+    .span3
+      p
+        br Call now: 1(312) 725-8453
+  p.lead Kris Tile Service. Any Tile, Anywhere.
