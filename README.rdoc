@@ -10,3 +10,10 @@ TODO:
 	* model: 
 Later:
 	* controller: Static pages... if needed?
+	<% provide(:title, @user.name) %>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.name %>

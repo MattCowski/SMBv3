@@ -1,5 +1,6 @@
 SMBv3::Application.routes.draw do
-  get "users/new"
+  resources :users
+  match '/signup', to: 'users#new', via: 'get'
   get "global_pages/about"
   get "global_pages/gallery"
   get "global_pages/home"
