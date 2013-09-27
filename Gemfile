@@ -33,7 +33,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'slim'
+gem 'slim-rails'
 gem 'filepicker-rails'
 gem 'jquery-turbolinks'
 gem 'delayed_job_active_record'
