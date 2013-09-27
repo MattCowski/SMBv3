@@ -1,4 +1,5 @@
 SMBv3::Application.routes.draw do
+  get "users/new"
   get "global_pages/about"
   get "global_pages/gallery"
   get "global_pages/home"

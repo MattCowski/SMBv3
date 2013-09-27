@@ -1,6 +1,12 @@
 This is a sample app for a local small business
 
 TODO:
+	* scaffold: Contact name email phone message 	
 	* move images to assets
+		* admin
+		* guest
+		* signed in users
 	* model: Specs(Options) name price:integer in_cart:boolean unit:string amount:integer
 	* model: 
+Later:
+	* controller: Static pages... if needed?

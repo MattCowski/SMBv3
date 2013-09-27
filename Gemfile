@@ -58,7 +58,7 @@ group :test do
   gem 'capybara', '2.1.0'
 end
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.1'
 
 # Use unicorn as the app server
 # gem 'unicorn'
