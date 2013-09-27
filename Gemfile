@@ -4,7 +4,6 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -40,11 +39,10 @@ gem 'delayed_job_active_record'
 gem 'bootstrap-sass'
 
 group :production do
-	gem 'pg'
+  gem 'pg'
   gem 'rails_12factor', '0.0.2'
 end
 group :development, :test do
-	# Use sqlite3 as the database for Active Record
 	gem 'sqlite3'
   gem 'better_errors'
   gem 'binding_of_caller'
