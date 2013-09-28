@@ -1,7 +1,7 @@
 doctype html
 html
 	head
-		title Kris Tile Service
+		title SMB Inc.
 		/ meta name="keywords" content="tile installation service"
 		/ meta name="author" content=author
     / link rel="icon" type="image/png" href=file_path("favicon.png")
@@ -19,8 +19,8 @@ html
 	  		- flash.each do |key, value|
 	  			.alert.alert-#{ key }
 	  				#{ value}
-	  		= yield
 	  		== render 'layouts/navbar'
+	  		= yield
 	  		== render 'layouts/footer'
 	  		= debug(params) if Rails.env.development?
 	  	.span1
