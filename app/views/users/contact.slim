@@ -1,0 +1,26 @@
+h1 Contact form
+p This form will send us an email.
+
+.row
+	.span6.offset3
+		=form_for(@user) do |f|
+			= render 'shared/error_messages'
+			= f.label :name
+			= f.text_field :name
+			= f.label :email
+			= f.text_field :email
+			= f.label :phone
+			= f.text_field :phone
+			= f.label :message
+			= f.text_field :message
+			= f.label :address
+			= f.text_field :address
+			= f.label :date
+			= f.text_field :date
+
+			= f.label :password, "Enter your password to save changes"
+			= f.password_field :password
+			= f.label :password_confirmation, "Confirmation"
+			= f.password_field :password_confirmation
+			
+			= f.submit "Send email", class: "btn btn-large btn-primary"

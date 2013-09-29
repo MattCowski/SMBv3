@@ -1,6 +1,7 @@
 SMBv3::Application.routes.draw do
   resources :users
-  resources :sessions, only: [:new, :create, :destroy]
+  resources :sessions, only: [:new, :create, :destroy, :contact]
+  # match '/contact',  to: 'users#contact',            via: 'get'
   match '/signup',  to: 'users#new',            via: 'get'
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
@@ -10,6 +11,8 @@ SMBv3::Application.routes.draw do
   get "global_pages/gallery"
   get "global_pages/home"
   get "global_pages/contact"
+
+  get 'users/:id/contact', to: 'users#contact'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
